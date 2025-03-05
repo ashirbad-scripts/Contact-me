@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="contact" placeholder="Your Email or Phone" required>
+                <textarea id="message" placeholder="Plase mention your query" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p id="responseMessage"></p>
+
+            <!-- 📌 Copyright inside the form container -->
+            <footer class="form-footer">
+                <p>&copy; Ashirbad Routray</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

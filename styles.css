@@ -1,0 +1,89 @@
+/* ✨ Modern Gradient Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    margin: 0;
+}
+
+/* ✨ Centered Contact Form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* ✨ Stylish Contact Form */
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+    position: relative;
+}
+
+/* 🔧 Fixed Overlapping Input Fields */
+.contact-form input, 
+.contact-form textarea {
+    width: calc(100% - 10px); /* Adjust width so it slightly extends */
+    padding: 12px 0px 12px 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    left: 5px;
+    right: 50px; /* Small subtle shift to the right */
+}
+
+/* ✨ On Focus: Smooth Shift */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1px solid #2a5298;
+    outline: none;
+    background: #f4f9ff;
+    left: 8px; /* Slight movement on focus */
+}
+
+/* ✨ Textarea Styling */
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* ✨ Stylish Send Button */
+.contact-form button {
+    background: #ff7b00;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #d06500;
+}
+
+.form-footer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+}
+
+/* ✨ Response Message */
+#responseMessage {
+    margin-top: 15px;
+    font-weight: bold;
+    color: green;
+}
