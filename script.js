@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
         let name = document.getElementById("name").value;
-        let email = document.getElementById("email").value;
+        let email = document.getElementById("contact").value;
         let message = document.getElementById("message").value;
 
         let templateParams = {
